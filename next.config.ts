@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 import path from "path";
 
-const supabaseUrl = "https://bsrizjihqrywmukqsess.supabase.co";
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://bsrizjihqrywmukqsess.supabase.co";
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === "development";
 // In production, only 'self' and trusted third-party script hosts are allowed.
 const scriptSrc = isDev
   ? "'self' 'unsafe-eval' 'unsafe-inline' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.google-analytics.com"
-  : "'self' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.google-analytics.com";
+  : "'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.google-analytics.com";
 
 const cspHeader = `
     default-src 'self';

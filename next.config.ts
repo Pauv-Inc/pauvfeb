@@ -15,7 +15,7 @@ const cspHeader = `
     default-src 'self';
     script-src ${scriptSrc};
     style-src 'self' 'unsafe-inline';
-    img-src 'self' blob: data: ${supabaseUrl};
+    img-src 'self' blob: data: ${supabaseUrl} https://*.supabase.co;
     connect-src 'self' ${supabaseUrl} https://*.supabase.co wss://*.supabase.co https://static.cloudflareinsights.com https://cloudflareinsights.com https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.doubleclick.net https://api.emailjs.com;
     font-src 'self';
     object-src 'none';

@@ -41,15 +41,13 @@ body {
   text-wrap: balance;
 }
 
-@media (max-width: 1023px) {
-  .hide-scrollbar-mobile {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+.hide-scrollbar-mobile {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
-  .hide-scrollbar-mobile::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    display: none;
-  }
+.hide-scrollbar-mobile::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }

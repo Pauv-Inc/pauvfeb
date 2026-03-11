@@ -319,10 +319,10 @@ export function HeroSection({
             lineHeight: "1.1",
             overflowX: "auto",
             whiteSpace: "nowrap",
-            WebkitOverflowScrolling: "touch",
           }}
         >
-          *PVs are digital collectibles that trade on public perception and do not represent ownership in any person or entity.
+          <span className="lg:hidden">PVs are digital collectibles based on public sentiment. They do not constitute an investment, debt, or any legal ownership interest in any person or entity</span>
+          <span className="hidden lg:inline">*PVs are digital collectibles that trade on public perception and do not represent ownership in any person or entity.</span>
         </div>
       </div>
 
